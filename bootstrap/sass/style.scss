@@ -1,0 +1,133 @@
+
+/*
+Theme Name: Iisha Bootstrap Sass
+Theme URI: 
+Description: Simple blog theme
+Author URI: 
+Version: 1.0
+Tags: responsive, white, bootstrap
+
+License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+License URI: http://creativecommons.org/licenses/by-sa/3.0/
+
+*/
+
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
+
+// Import custom Bootstrap variables
+@import "bootstrap-variables";
+
+// Import Bootstrap for Sass
+@import "bootstrap";
+
+/*Sass variables*/
+
+$header-color:#000;
+
+$body-text-color:#000;
+
+$nav-bar-color:#fff;
+
+$footer-color-text:#666;
+
+$link-color:#000;
+
+/* Theme Styling*/
+body{
+	background:white;
+
+
+}
+/*Headers and Body Text*/
+h1,h2,h3,h4,h5,p{
+
+    font-family: 'Open Sans', sans-serif;
+	
+}
+
+h1,h2,h3,h4,h5{
+
+    font-weight:700;
+	font-color:$header-color;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-color:$body-text-color;
+	font-size: 13px;
+
+}
+
+li{
+
+	font-family: 'Open Sans', sans-serif;
+	color:$body-text-color;
+	
+}
+
+ol{
+	font-family: 'Open Sans', sans-serif;
+	color:$body-text-color;
+	
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+}
+
+a:hover,a:focus{
+	color: $link-color;
+}
+
+
+/* Nav Bar Styling */
+.navbar-default .navbar-nav > li,
+.navbar-default .navbar-brand{
+	font-family: 'Open Sans', sans-serif;
+	font-weight:700;
+}
+
+/* Footer Styling */
+hr{
+	border-top: solid 1px #000;
+}
+
+footer p{
+	color:$footer-color-text;
+}
+
+
+.home-main-section{
+	
+}
+
+.header-section{
+	background:grey;
+	height:300px;
+	margin-left: -7%;
+}
+.home-section{
+
+width:100%;
+height:400px;
+}
+
+.container-fluid{
+	padding:0;
+}
+
+.sidebar{
+	position:relative;
+	background:red;
+	width:25%;
+}
+
+/*media queries*/
+@media (min-width: 768px){
+	.container {
+	    width: 100%;
+	}
+
+}
